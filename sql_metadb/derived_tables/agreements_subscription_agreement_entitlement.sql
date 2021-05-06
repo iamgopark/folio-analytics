@@ -13,6 +13,7 @@ SELECT
     sa_agreement_status AS subscription_agreement_status,
     sas.rdv_value AS subscription_agreement_status_value,
     sas.rdv_label AS subscription_agreement_status_label,
+    custom_properties_id AS custom_properties_container_id,
     ent.ent_id AS entitlement_id,
     ent.ent_active_to AS entitlement_active_to,
     ent.ent_active_from AS entitlement_active_from,
@@ -45,6 +46,8 @@ CREATE INDEX ON folio_derived.agreements_subscription_agreement_entitlement (sub
 CREATE INDEX ON folio_derived.agreements_subscription_agreement_entitlement (subscription_agreement_status_value);
 
 CREATE INDEX ON folio_derived.agreements_subscription_agreement_entitlement (subscription_agreement_status_label);
+
+CREATE INDEX ON folio_derived.agreements_subscription_agreement_entitlement (custom_properties_container_id);
 
 CREATE INDEX ON folio_derived.agreements_subscription_agreement_entitlement (entitlement_id);
 
