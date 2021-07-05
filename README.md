@@ -1,3 +1,4 @@
+<meta name="google-site-verification" content="mI3_JlOCd_x2P5DgPX9Tj0o_Ho8e-eD0WmjsjGgwfsA" />
 # folio-analytics
 
 Copyright (C) 2018-2021 The Open Library Foundation
